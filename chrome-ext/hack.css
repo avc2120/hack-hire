@@ -10,7 +10,7 @@
   background-color: #fff;
   border-radius: 2px;
   width: 480px;
-  min-height: 250px;
+  min-height: 150px;
   max-height:390px;
   z-index: 0;
   font-weight: 400;
@@ -21,7 +21,7 @@
   visibility: hidden;
   position: relative;
   top:-17px;
-  left:-193px;
+  left:-232px;
 }
 
 .hack-hovercard-bottom:before {
@@ -69,6 +69,8 @@
 .hack-description {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
   margin:8px;
+  display: inline-block;
+  font: unset;
 }
 
 #better-notifications-popout {
@@ -79,10 +81,16 @@
   width: 80px;
   height: 80px;
   float: left;
+  display: inline-block;
 }
 
 .hack-popout-title {
   padding-top:10px;
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+  color: grey;
+  text-transform: uppercase;
 }
 
 .hack-button {

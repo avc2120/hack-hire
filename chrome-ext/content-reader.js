@@ -44,20 +44,10 @@ if (window == window.top) {
         if (!window.location.href.includes('notifications')) resetNavItemUnderline();
       } else {
         $notificationsPopout.addClass('active');
-        showNotificationsFrameIfReady();
       }
     }
   }
 
-  function showNotificationsFrameIfReady() {
-    if (isNotificationsFrameLoaded) { // set in notifications-handler.js
-      $('.hack-loader').addClass('hack-hide');
-      $('.hack-iframe').removeClass('hack-iframe-hide');
-    } else {
-      $('.hack-loader').removeClass('hack-hide');
-      setTimeout(showNotificationsFrameIfReady, 100);
-    }
-  }
 
   $(window).resize(function() {
     if ($notificationsPopout && $notificationsPopout.hasClass('active')) {
