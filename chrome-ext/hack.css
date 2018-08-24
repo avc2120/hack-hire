@@ -1,0 +1,100 @@
+.nav-item__link {
+  cursor: pointer;
+}
+
+.hack-hovercard-bottom {
+  font-family: Source Sans Pro,Helvetica,Arial,sans-serif,Hiragino Kaku Gothic Pro,Meiryo,Hiragino Sans GB W3,Noto Naskh Arabic,Droid Arabic Naskh,Geeza Pro,Simplified Arabic,Noto Sans Thai,Thonburi,Dokchampa,Droid Sans Thai,Droid Sans Fallback,-apple-system,'.SFNSDisplay-Regular',Heiti SC,Microsoft Yahei,Segoe UI;
+  color: rgba(0,0,0,.7);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1),0 6px 9px rgba(0,0,0,.2);
+  background-clip: padding-box;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 480px;
+  min-height: 250px;
+  max-height:390px;
+  z-index: 0;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 15px;
+  opacity: 0;
+  transition: visibility 0s linear .2s,opacity .2s linear;
+  visibility: hidden;
+  position: relative;
+  top:-17px;
+  left:-193px;
+}
+
+.hack-hovercard-bottom:before {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 9px;
+  border-bottom: 9px rgba(0,0,0,.1) solid;
+  content: "";
+  height: 0;
+  width: 0;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+}
+
+.hack-hovercard-bottom:after {
+  border-color: transparent;
+  border-style: solid;
+  content: "";
+  height: 0;
+  width: 0;
+  left: 50%;
+  position: absolute;
+}
+
+.hack-hovercard-bottom:after {
+  border-width: 0 8px;
+  border-bottom: 8px #fff solid;
+  top: -8px;
+  margin-left: -9px;
+}
+
+.hack-hovercard-bottom.active {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
+  z-index: 999;
+}
+
+.hack-title {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+}
+
+.hack-description {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+  margin:8px;
+}
+
+#better-notifications-popout {
+  text-transform: none;
+}
+
+.hack-img {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.hack-popout-title {
+  padding-top:10px;
+}
+
+.hack-button {
+  background: white !important;
+  color: #4089ce !important;
+  border: 2px solid !important;
+  border-radius: 2px !important;
+  margin: 10px !important;
+  float: left;
+}
+
+.hide {
+  visibility: hidden;
+  display:none
+}
