@@ -31,7 +31,8 @@
         "all_frames": true
     }],
     "web_accessible_resources": [
-        "notifications.html"
+        "notifications.html",
+        "feedback.html"
     ],
     "browser_action": {
         "default_icon": "icon.png"

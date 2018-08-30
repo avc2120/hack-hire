@@ -48,7 +48,6 @@ if (window == window.top) {
     }
   }
 
-
   $(window).resize(function() {
     if ($notificationsPopout && $notificationsPopout.hasClass('active')) {
       //positionPopout($notificationsNavItemLink, $notificationsPopout);
